@@ -1,7 +1,8 @@
 import { ITaskList } from "../Interface/ITaskList"
 
 export const getTaskLists = async (): Promise<TaskListResponse> => {
-  const response = await fetch('http://localhost:3333/task-list')
+  const URL = import.meta.env.VITE_URL;
+  const response = await fetch(URL+'/task-list')
   const data = await response.json()
 
   return data

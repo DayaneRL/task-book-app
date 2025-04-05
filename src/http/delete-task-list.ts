@@ -1,5 +1,6 @@
 export const deleteTaskList = async (id: string) => {
-    const response = await fetch('http://localhost:3333/task-list?id='+id, {
+    const URL = import.meta.env.VITE_URL;
+  const response = await fetch(URL+'/task-list?id='+id, {
       method: 'DELETE',
     })
     // const data = response.json()

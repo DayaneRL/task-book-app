@@ -3,7 +3,8 @@ export const createTaskList = async ({
   description,
   status
 }: CreateTaskListRequest) => {
-  const response = await fetch('http://localhost:3333/task-list', {
+  const URL = import.meta.env.VITE_URL;
+  const response = await fetch(URL+'/task-list', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -1,5 +1,6 @@
 export const createTaskConclusion = async (id: string, concluded:boolean) => {
-  const response = await fetch('http://localhost:3333/tasks-conclusion', {
+  const URL = import.meta.env.VITE_URL;
+  const response = await fetch(URL+'/tasks-conclusion', {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
