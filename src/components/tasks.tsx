@@ -6,7 +6,7 @@ import { DropdownMenu } from '@radix-ui/themes'
 import { DialogTrigger } from './ui/dialog'
 import { Dispatch, SetStateAction, useState } from 'react'
 import ITask from '../Interface/ITask'
-import { ConfirmModal } from './confirmModal'
+import { ConfirmModal } from './confirm-modal'
 
 interface ITasks {
   setTask:Dispatch<SetStateAction<ITask | undefined>>;

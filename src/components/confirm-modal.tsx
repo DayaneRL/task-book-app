@@ -20,13 +20,12 @@ export const ConfirmModal: React.FC<ITModalProps> = ({open, setOpen, taskId, sel
 
     const queryClient = useQueryClient();
 
-    const { data } = useQuery({
+    useQuery({
         queryKey: ['task-list-tasks'],
         queryFn: () => getTaskListTasks(selectedListId??''),
     })
 
     const handleDeleteTask = async (id: string) => {
-        console.log(id);
         if(id){
             await deleteTask(id)
             toast.success('Task removida com sucesso!')

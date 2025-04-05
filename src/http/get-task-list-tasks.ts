@@ -1,4 +1,3 @@
-import ITask from "../Interface/ITask"
 
 export const getTaskListTasks = async (taskListId: string): Promise<TaskListTasksResponse> => {
   const URL = import.meta.env.VITE_URL;

@@ -2,7 +2,7 @@
 
 Aplicação em React usando tailwind, radix-ui e zod.
 
-<img src='./example.png' alt='Exemplo aplicação task book'>
+<img src='./src/assets/example.png' alt='Exemplo aplicação task book'>
 
 ## Como funciona
 
@@ -18,4 +18,4 @@ Marcar ou desmarcar uma tarefa como concluída.
 
 ## Visualizar
 
--
+Link para visualização <a href="https://task-book-app-vercel.vercel.app" target="_blank"> Blog React </a>
