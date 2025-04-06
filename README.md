@@ -18,4 +18,4 @@ Marcar ou desmarcar uma tarefa como concluída.
 
 ## Visualizar
 
-Link para visualização <a href="https://task-book-app-vercel.vercel.app" target="_blank"> Blog React </a>
+Link para visualização <a href="https://task-book-app-vercel.vercel.app" target="_blank"> Task Book App </a>
