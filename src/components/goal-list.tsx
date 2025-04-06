@@ -5,9 +5,7 @@ import logoTb from '../assets/logo-tb.svg'
 import { Progress, ProgressIndicator } from './ui/progress-bar'
 import { Separator } from './ui/separator'
 import { useQuery } from '@tanstack/react-query'
-// import { getTaskLists } from '../http/get-task-lists'
-import dayjs from 'dayjs'
-import ptBR from 'dayjs/locale/pt-BR'
+
 import { Tasks } from './tasks'
 import { getTaskListTasks } from '../http/get-task-list-tasks'
 import { EmptyGoals } from './empty-task'
@@ -16,7 +14,6 @@ import ITask from '../Interface/ITask'
 import { ITaskList } from '../Interface/ITaskList'
 import { toast } from 'sonner'
 
-dayjs.locale(ptBR)
 
 interface IData {
   selectedList: ITaskList | undefined;
